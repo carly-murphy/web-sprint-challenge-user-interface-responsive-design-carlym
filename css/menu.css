@@ -55,11 +55,17 @@ html {
     max-width: 1920px;
     min-width: 428px;
     font-size: 62.5%;
+    color: white;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
@@ -68,6 +74,7 @@ h1, h2, h3, h4, h5, h6, p, a, i {
 
 h1 {
     font-size: 7.5rem;
+    text-align: center;
 }
 
 h2 {
@@ -96,6 +103,33 @@ header {
     background-repeat: no-repeat;
 }
 
+header h1 {
+    background-color: rgba(0,0,0,0.8);
+}
+
+header nav {
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+header nav a {
+    padding: 5%;
+    color: white;
+    font-size: 2rem;
+}
+
+header div.social {
+    /* background-color: rgba(0,0,0,0.6); */
+    width: 100%;
+    text-align: center;
+
+}
+
+i {
+   margin: 2%;
+   font-size: 3rem;
+}
+
 /* spacer */
 .spacer {
     width: 100%;
@@ -110,7 +144,7 @@ header {
 
 /* menu */
 
-.menu {
+div.menu {
     width: 100%;
     height: auto;
     background-image: url('../img/staff-bartender.jpg');
@@ -118,6 +152,46 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white;
+}
+
+div.menu div.fooddrink h2.title {
+    font-size: 5rem;
+    text-align: center;
+    padding: 3%;
+}
+
+div.menu div.fooddrink div.menu-section {
+    /* border: 2px solid red; */
+    width: 33%;
+    margin-left: 10%;
+    margin-top: 3%;
+    display: inline-block;
+    /* float: left; */
+}
+
+
+div.menu div.fooddrink div.menu-section div.menu-item h4.name {
+    text-align: left;
+    display: inline;
+    font-size: 3rem;
+}
+
+div.menu div.fooddrink div.menu-section div.menu-item h4.price {
+    display: inline;
+    float: right;
+    font-size: 3rem;
+}
+
+div.menu div.fooddrink div.menu-section div.menu-item p {
+    font-size: 2rem;
+}
+
+
+
+
+div.menu div.fooddrink {
+    background-color: rgba(0,0,0,0.8)
 }
 
 /* footer section */
@@ -126,6 +200,43 @@ footer {
     height: 15vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: black;
+}
+
+footer nav {
+    background-color: black;
+    text-align: center;
+}
+
+footer nav a {
+    padding: 5%;
+    color: white;
+    font-size: 2rem;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div.emailsignup {
+    text-align: center;
+}
+
+footer div.emailsignup label {
+    /* background-color: white;
+    color: black;
+    border: 1px solid black; */
+    font-size: 1.5rem;
+}
+
+footer h6 {
+    background-color: black;
+    font-size: 1rem;
+    text-align: center;
 }
 
 /* mobile media query */
